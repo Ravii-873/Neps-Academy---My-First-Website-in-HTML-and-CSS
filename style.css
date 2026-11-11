@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
+  --font-display: "Fraunces", "Georgia", "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
   --green-forest-50: #f0f4f1;
   --green-forest-100: #dce7df;
   --green-forest-200: #b9cebe;
@@ -49,7 +54,134 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--green-forest-950);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom-color: var(--yellow-burnt-400) !important;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.75rem 2.5rem;
+  background-color: var(--green-forest-800);
+  color: #ffffff;
+  border-bottom: 2px solid var(--yellow-burnt-500);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+}
+
+.header-logo p {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.header-logo p span {
+  color: var(--yellow-burnt-400);
+}
+
+.nav-ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-ul a {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.head-ig-icon {
+  height: 26px;
+  width: 26px;
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}
+
+.head-ig-icon:hover {
+  opacity: 1;
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  margin-top: auto;
+  background-color: var(--green-forest-900);
+  color: #ffffff;
+}
+
+.footer-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-ul li {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--green-forest-200);
+  letter-spacing: 0.02em;
+}
+
+.footer-ul a {
+  color: var(--green-forest-100);
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-ul a:hover {
+  color: #ffffff;
 }

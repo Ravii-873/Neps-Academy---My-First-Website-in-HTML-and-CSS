@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/logo.png" >
-    <title>Brasilian Voyagers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Brasilian Voyagers</title>
 </head>
+
 <body>
-    
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.png" alt="Brasilian Voyagers logo">
+      <p>Bra<span>s</span>ilian Voyagers</p>
+    </div>
+    <nav>
+      <ul class="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- This link would redirect to the company's Instagram account -->
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="head-ig-icon"
+        src="images/instagram-icon.webp" alt="Instagram icon"></a>
+  </header>
+
+  <main id="contact-main">
+    <p id="form-advice"><strong>Important:</strong> This formulary is for demonstrative purposes only. It will not be
+      saved, sent or processed anywhere. Don't insert any of your personal,
+      confidential data, otherwise, it will be exposed in the URL!</p>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <form id="contact-form" method="GET">
+        <div class="input">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Insert your name">
+        </div>
+        <div class="input">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="Insert your e-mail">
+        </div>
+        <div class="input">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required
+            placeholder="Ex.: I wish you added a feature. Today I traveled [...]"></textarea>
+        </div>
+        <div class="input input-checkbox">
+          <input type="checkbox" id="accept-terms" name="accept-terms" required>
+          <!-- This link would redirect to the Terms and Conditions for Messages -->
+          <label for="accept-terms">I accept the <a
+              href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank"
+              rel="noopener">Terms and Conditions for
+              Messages</a></label>
+        </div>
+        <button id="form-submit" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="footer-ul">
+      <li>2026 Brasilian Voyagers &copy;</li>
+      <!-- This would be a link to the company's privacy policy -->
+      <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank"
+          rel="noopener">Privacy Policy</a></li>
+      <li><a href="https://github.com/Ravii-873" target="_blank" rel="noopener">Ravi Petry Schwonke</a></li>
+      <li class="footer-ig">
+        <!-- This link would redirect to the company's Instagram account -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="head-ig-icon"
+            src="images/instagram-icon.webp" alt="Instagram icon"></a>
+      </li>
+    </ul>
+  </footer>
 </body>
+
 </html>

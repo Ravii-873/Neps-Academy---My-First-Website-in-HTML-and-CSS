@@ -1,12 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/logo.png" >
-    <title>Brasilian Voyagers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Brasilian Voyagers</title>
 </head>
+
 <body>
-    
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.png" alt="Brasilian Voyagers logo">
+      <p>Bra<span>s</span>ilian Voyagers</p>
+    </div>
+    <nav>
+      <ul class="nav-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- This link would redirect to the company's Instagram account -->
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="head-ig-icon"
+        src="images/instagram-icon.webp" alt="Instagram icon"></a>
+  </header>
+
+  <main id="about">
+    <div class="about-intro">
+      <h1>Here you find your next destination!</h1>
+      <nav id="nav-about">
+        <ul>
+          <li><a href="#places-guide">Places Guide</a></li>
+          <li><a href="#travel-packages">Travel Packages</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="places-guide">
+      <h2>Places Guide</h2>
+      <div class="places-list">
+        <article class="place-card">
+          <img src="./images/lencois-maranhenses.webp"
+            alt="White sand dunes and freshwater lagoons at Lençóis Maranhenses National Park">
+          <div class="place-info">
+            <h3>Lençóis Maranhenses <span>(MA)</span></h3>
+            <p>On Maranhão's coast, this national park protects 155,000 hectares of sweeping white sand dunes. From June
+              to September, seasonal rains fill the valleys with thousands of crystal-clear freshwater lagoons, creating
+              a
+              surreal landscape. Local culture blends Indigenous and Quilombola traditions, highlighted by fresh seafood
+              cuisine. Top activities include taking 4x4 tours from Barreirinhas or Atins to swim in Lagoa Azul and
+              Lagoa Bonita, and watching the sunset over the dunes.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <img src="./images/iguazu-falls.jpeg" alt="Cascades of Iguazu Falls surrounded by Atlantic Forest">
+          <div class="place-info">
+            <h3>Iguazu Falls <span>(PR)</span></h3>
+            <p>Straddling the border between Brazil (Foz do Iguaçu) and Argentina, this is the world's largest waterfall
+              system, featuring about 275 cascades surrounded by subtropical Atlantic Forest. Guarani legend attributes
+              the
+              falls to the wrath of the serpent god M'Boi. Visitors can walk along scenic footbridges up to the
+              thundering
+              Devil's Throat, take an exhilarating Macuco Safari boat ride under the falls, and explore the nearby Bird
+              Park
+              (Parque das Aves).</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <img src="./images/botanical-garden-curitiba.jpg"
+            alt="Iron-and-glass greenhouse of the Botanical Garden of Curitiba">
+          <div class="place-info">
+            <h3>Botanical Garden of Curitiba <span>(PR)</span></h3>
+            <p>Opened in 1991, this is the primary postcard landmark of Paraná's capital, inspired by classic French
+              gardens. Its iconic iron-and-glass greenhouse originally sheltered Atlantic Forest flora while serving as
+              a
+              conservation and research hub. The park reflects Curitiba's planned urbanism and strong European heritage.
+              Visitors enjoy strolling past geometric flowerbeds, touring the Frans Krajcberg Cultural Space, exploring
+              the
+              sensory garden, and relaxing on the lawns at sunset.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <img src="./images/alter-do-chao.jpg" alt="White-sand river beach on the Tapajós River at Alter do Chão">
+          <div class="place-info">
+            <h3>Alter do Chão <span>(PA)</span></h3>
+            <p>Dubbed the "Amazonian Caribbean," this village near Santarém, Pará, sits along the Tapajós River. During
+              the
+              dry season (August to January), receding waters reveal vast white-sand river beaches, notably Ilha do
+              Amor.
+              The area preserves a strong Borari Indigenous identity, celebrated annually during the Sairé Festival.
+              Popular
+              activities include boat trips through the Tapajós National Forest, swimming in warm, clear waters, and
+              tasting
+              regional Amazonian fish dishes.</p>
+          </div>
+        </article>
+
+        <article class="place-card">
+          <img src="./images/serra-da-capivara.jpg"
+            alt="Rock formations and canyons of Serra da Capivara National Park">
+          <div class="place-info">
+            <h3>Serra da Capivara <span>(PI)</span></h3>
+            <p>Located in Piauí's semi-arid Caatinga biome, this UNESCO World Heritage national park holds the highest
+              concentration of prehistoric archaeological sites in the Americas. Its dramatic rock formations and
+              canyons
+              preserve cave paintings over 12,000 years old, depicting the daily lives of the continent's earliest
+              inhabitants. The region is also renowned for traditional handmade ceramics. Visitors take guided boardwalk
+              trails to painted rock walls, such as Boqueirão da Pedra Furada.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="travel-packages">
+      <h2>Travel Packages</h2>
+      <div class="places-list">
+        <article class="package-card">
+          <img src="./images/lencois-maranhenses.webp"
+            alt="White sand dunes and freshwater lagoons at Lençóis Maranhenses National Park">
+          <div class="package-info">
+            <div class="package-header">
+              <h3>Lençóis Maranhenses <span>(MA)</span></h3>
+              <p class="package-price"><strong>US$ 890</strong><span>per person</span></p>
+            </div>
+            <ul class="package-tags">
+              <li>5 days & 4 nights</li>
+              <li class="tag-season">Available Jun - Sep</li>
+            </ul>
+            <div class="package-details">
+              <div class="package-section">
+                <h4>Route</h4>
+                <p>São Luís -> Barreirinhas -> Lagoa Azul -> Lagoa Bonita -> Atins -> São Luís</p>
+              </div>
+              <div class="package-section">
+                <h4>Included</h4>
+                <ul class="package-included">
+                  <li>Round-trip transfers from São Luís</li>
+                  <li>4 nights in local pousadas</li>
+                  <li>Daily breakfast</li>
+                  <li>4x4 dune tours with a local driver</li>
+                  <li>Sunset visit to the dunes</li>
+                </ul>
+              </div>
+            </div>
+            <a class="package-cta" href="contact.html">Request this package</a>
+          </div>
+        </article>
+
+        <article class="package-card">
+          <img src="./images/iguazu-falls.jpeg" alt="Cascades of Iguazu Falls surrounded by Atlantic Forest">
+          <div class="package-info">
+            <div class="package-header">
+              <h3>Iguazu Falls <span>(PR)</span></h3>
+              <p class="package-price"><strong>US$ 720</strong><span>per person</span></p>
+            </div>
+            <ul class="package-tags">
+              <li>4 days & 3 nights</li>
+              <li class="tag-season">Available all year</li>
+            </ul>
+            <div class="package-details">
+              <div class="package-section">
+                <h4>Route</h4>
+                <p>Foz do Iguaçu -> Brazilian Falls trail and Devil’s Throat -> Macuco Safari -> Parque das Aves -> Itaipu
+                  Dam -> Foz do Iguaçu</p>
+              </div>
+              <div class="package-section">
+                <h4>Included</h4>
+                <ul class="package-included">
+                  <li>Airport transfers</li>
+                  <li>3 nights in a hotel in Foz do Iguaçu</li>
+                  <li>Daily breakfast</li>
+                  <li>Entrance tickets to the Falls and Parque das Aves</li>
+                  <li>Macuco Safari boat ride</li>
+                </ul>
+              </div>
+            </div>
+            <a class="package-cta" href="contact.html">Request this package</a>
+          </div>
+        </article>
+
+        <article class="package-card">
+          <img src="./images/botanical-garden-curitiba.jpg"
+            alt="Iron-and-glass greenhouse of the Botanical Garden of Curitiba">
+          <div class="package-info">
+            <div class="package-header">
+              <h3>Botanical Garden of Curitiba <span>(PR)</span></h3>
+              <p class="package-price"><strong>US$ 540</strong><span>per person</span></p>
+            </div>
+            <ul class="package-tags">
+              <li>3 days & 2 nights</li>
+              <li class="tag-season">All year - best Sep - Nov</li>
+            </ul>
+            <div class="package-details">
+              <div class="package-section">
+                <h4>Route</h4>
+                <p>Curitiba -> Botanical Garden and Frans Krajcberg Cultural Space -> Scenic train to Morretes -> Curitiba
+                </p>
+              </div>
+              <div class="package-section">
+                <h4>Included</h4>
+                <ul class="package-included">
+                  <li>Airport transfers</li>
+                  <li>2 nights in a downtown hotel</li>
+                  <li>Daily breakfast</li>
+                  <li>Guided city tour</li>
+                  <li>Scenic train tickets to Morretes</li>
+                </ul>
+              </div>
+            </div>
+            <a class="package-cta" href="contact.html">Request this package</a>
+          </div>
+        </article>
+
+        <article class="package-card">
+          <img src="./images/alter-do-chao.jpg" alt="White-sand river beach on the Tapajós River at Alter do Chão">
+          <div class="package-info">
+            <div class="package-header">
+              <h3>Alter do Chão <span>(PA)</span></h3>
+              <p class="package-price"><strong>US$ 1,150</strong><span>per person</span></p>
+            </div>
+            <ul class="package-tags">
+              <li>6 days & 5 nights</li>
+              <li class="tag-season">Available Aug - Jan</li>
+            </ul>
+            <div class="package-details">
+              <div class="package-section">
+                <h4>Route</h4>
+                <p>Santarém -> Alter do Chão -> Ilha do Amor -> Tapajós National Forest -> Alter do Chão -> Santarém</p>
+              </div>
+              <div class="package-section">
+                <h4>Included</h4>
+                <ul class="package-included">
+                  <li>Transfers from Santarém airport</li>
+                  <li>5 nights in a riverside pousada</li>
+                  <li>Daily breakfast and 2 regional dinners</li>
+                  <li>Boat trip to Ilha do Amor</li>
+                  <li>Guided Tapajós National Forest excursion</li>
+                </ul>
+              </div>
+            </div>
+            <a class="package-cta" href="contact.html">Request this package</a>
+          </div>
+        </article>
+
+        <article class="package-card">
+          <img src="./images/serra-da-capivara.jpg"
+            alt="Rock formations and canyons of Serra da Capivara National Park">
+          <div class="package-info">
+            <div class="package-header">
+              <h3>Serra da Capivara <span>(PI)</span></h3>
+              <p class="package-price"><strong>US$ 980</strong><span>per person</span></p>
+            </div>
+            <ul class="package-tags">
+              <li>5 days & 4 nights</li>
+              <li class="tag-season">Available May - Oct</li>
+            </ul>
+            <div class="package-details">
+              <div class="package-section">
+                <h4>Route</h4>
+                <p>São Raimundo Nonato -> Boqueirão da Pedra Furada -> Baixão da Vaca -> Museu do Homem Americano -> São
+                  Raimundo Nonato</p>
+              </div>
+              <div class="package-section">
+                <h4>Included</h4>
+                <ul class="package-included">
+                  <li>Transfers from São Raimundo Nonato</li>
+                  <li>4 nights in a local hotel</li>
+                  <li>Daily breakfast</li>
+                  <li>Licensed local guide</li>
+                  <li>Park entrance fees</li>
+                </ul>
+              </div>
+            </div>
+            <a class="package-cta" href="contact.html">Request this package</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="footer-ul">
+      <li>2026 Brasilian Voyagers &copy;</li>
+      <!-- This would be a link to the company's privacy policy -->
+      <li><a href="#" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li><a href="https://github.com/Ravii-873" target="_blank" rel="noopener">Ravi Petry Schwonke</a></li>
+      <li class="footer-ig">
+        <!-- This link would redirect to the company's Instagram account -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="head-ig-icon"
+            src="images/instagram-icon.webp" alt="Instagram icon"></a>
+      </li>
+    </ul>
+  </footer>
 </body>
+
 </html>

@@ -354,11 +354,6 @@ main section {
   color: var(--green-forest-900);
 }
 
-#community-posts p {
-  font-size: 1.2rem;
-  border-bottom: 1px solid var(--green-forest-100);
-}
-
 .package-info {
   gap: 1rem;
 }

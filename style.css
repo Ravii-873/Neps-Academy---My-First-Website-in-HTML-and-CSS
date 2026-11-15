@@ -156,7 +156,8 @@ header img {
   opacity: 1;
 }
 
-main {
+main,
+#contact-main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -445,6 +446,20 @@ main section {
   content: " ";
 }
 
+#contact-main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#form-advice {
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: var(--green-forest-800);
+}
+
 #contact {
   width: 100%;
   max-width: 50rem;
@@ -618,7 +633,8 @@ footer {
     display: none;
   }
 
-  main {
+  main,
+  #contact-main {
     flex-direction: column;
     align-items: center;
     margin: 1.5rem 5%;

@@ -179,6 +179,7 @@ main {
 }
 
 #what-is h1,
+#examples h2,
 #contact h1,
 #about h1 {
   font-family: var(--font-display);
@@ -226,11 +227,6 @@ main {
   font-weight: 100;
   color: var(--yellow-burnt-600);
 }
-
-/* #examples {
-
-} */
-
 
 #about {
   display: flex;
